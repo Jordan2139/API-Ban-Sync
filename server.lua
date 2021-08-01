@@ -1,3 +1,13 @@
+----------------------------------------------------------------
+-- API Ban Sync - A Simple FiveM Script, Made By Jordan.#2139 --
+----------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------
+                  -- !WARNING! !WARNING! !WARNING! !WARNING! !WARNING! --
+        -- DO NOT TOUCH THIS FILE OR YOU /WILL/ FUCK SHIT UP! EDIT THE CONFIG.LUA --
+-- DO NOT BE STUPID AND WHINE TO ME ABOUT THIS BEING BROKEN IF YOU TOUCHED THE LINES BELOW. --
+----------------------------------------------------------------------------------------------
+
 card = '{"type":"AdaptiveCard","$schema":"http://adaptivecards.io/schemas/adaptive-card.json","version":"1.2","body":[{"type":"Image","url":"' .. config.AdaptiveCards.Header_IMG .. '","horizontalAlignment":"Center"},{"type":"Container","items":[{"type":"TextBlock","text":"API Ban Sync","wrap":true,"fontType":"Default","size":"ExtraLarge","weight":"Bolder","color":"Light","horizontalAlignment":"Center"},{"type":"TextBlock","text":"' .. config.AdaptiveCards.Heading1 .. '","wrap":true,"size":"Large","weight":"Bolder","color":"Light", "horizontalAlignment":"Center"},{"type":"TextBlock","text":"' .. config.AdaptiveCards.Heading2 .. '","wrap":true,"color":"Light","size":"Medium","horizontalAlignment":"Center"},{"type":"ColumnSet","height":"stretch","minHeight":"100px","bleed":true,"horizontalAlignment":"Center","columns":[{"type":"Column","width":"stretch","items":[{"type":"ActionSet","actions":[{"type":"Action.OpenUrl","title":"Discord","url":"' .. config.AdaptiveCards.Discord_Link .. '","style":"positive"}]}],"height":"stretch"},{"type":"Column","width":"stretch","items":[{"type":"ActionSet","actions":[{"type":"Action.OpenUrl","title":"Website","style":"positive","url":"' .. config.AdaptiveCards.Website_Link .. '"}]}]}]},{"type":"ActionSet","actions":[{"type":"Action.OpenUrl","title":"Click to join Jordan\'s Discord","style":"destructive","iconUrl":"https://i.imgur.com/XGREJcb.png","url":"https://jordan2139.me/discord"}]}],"style":"default","bleed":true,"height":"stretch","isVisible":true}]}'
 
 AddEventHandler('playerConnecting', function(name, setKickReason, deferrals) 

@@ -1,3 +1,7 @@
+----------------------------------------------------------------
+-- API Ban Sync - A Simple FiveM Script, Made By Jordan.#2139 --
+----------------------------------------------------------------
+
 config = {
     APIName = "https://protectthedevs.com", -- The name of your api
     apiURL = 'https://protectthedevs.com/api/users/', -- The URL of the API that you would like to use
